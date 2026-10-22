@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body.bground-beranda{
+    background-image: url(../Foto/beranda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+=======
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body.bground-beranda{
+    background-image: url(../Foto/beranda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> 7305b6d (Update kode beranda)
+}
