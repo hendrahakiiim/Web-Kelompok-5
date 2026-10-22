@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Portal Siaga Bencana</title>
+    
+    <!-- Memanggil CSS dari folder css/ -->
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/responsif.css">
 </head>
-    <body class="bground-beranda" >
-        <h1>Selamat Datang di Portal Siaga Bencana & Edukasi Mitigasi</h1>
-        <p>Indonesia berada di jalur Cincin Api Pasifik (Ring of Fire), yang membuatnya rawan terhadap berbagai jenis bencana alam. Portal ini hadir sebagai panduan kesiapsiagaan untuk membantu Anda dan keluarga tetap aman sebelum, saat, dan setelah bencana terjadi.</p>
+<body>
 
-        <div class="card">
-            <h2>Langkah Utama Kesiapsiagaan</h2>
-            <ul>
-                <li><strong>Pahami Risiko:</strong> Kenali potensi bencana di wilayah tempat tinggal Anda.</li>
-                <li><strong>Siapkan Tas Siaga Bencana (TSB):</strong> Simpan dokumen penting, obat-obatan, dan kebutuhan darurat untuk minimal 3 hari.</li>
-                <li><strong>Ketahui Jalur Evakuasi:</strong> Tentukan titik kumpul aman bersama keluarga.</li>
-            </ul>
+    <!-- Navigasi Atas -->
+    <header>
+        <div class="navbar">
+            <div class="logo">BERANDA</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">BERANDA</a></li>
+                    <li><a href="pages/tsunami.html">TSUNAMI</a></li>
+                    <li><a href="pages/puting-beliung.html">PUTING BELIUNG</a></li>
+                    <li><a href="pages/longsor.html">LONGSOR</a></li>
+                    <li><a href="pages/kebakaran.html">KEBAKARAN</a></li>
+                    <li><a href="pages/gunung-meletus.html">GUNUNG MELETUS</a></li>
+                    <li><a href="pages/gempa.html">GEMPA</a></li>
+                    <li><a href="pages/banjir.html">BANJIR</a></li>
+                    <li><a href="pages/tas-siaga.html">TAS SIAGA</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
->>>>>>> 7305b6d (Update kode beranda)
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <!-- Judul Utama -->
+        <h1 class="main-title">SELAMAT DATANG DI PORTAL SIAGA BENCANA & EDUKASI MITIGASI</h1>
+
+        <!-- Galeri Gambar Bencana -->
+        <div class="gallery-container">
+            <!-- Baris Atas (4 Gambar) -->
+            <div class="row row-top">
+                <div class="card">
+                    <img src="Foto/longsor.jpeg" alt="Longsor">
+                </div>
+                <div class="card">
+                    <img src="Foto/kebakaran.jpeg" alt="Kebakaran">
+                </div>
+                <div class="card">
+                    <img src="Foto/gunung-meletus.jpeg" alt="Gunung Meletus">
+                </div>
+                <div class="card">
+                    <img src="Foto/gempa.jpeg" alt="Gempa">
+                </div>
+            </div>
+
+            <!-- Baris Bawah (3 Gambar) -->
+            <div class="row row-bottom">
+                <div class="card">
+                    <img src="Foto/banjir.jpeg" alt="Banjir">
+                </div>
+                <div class="card">
+                    <img src="Foto/puting-beliung.jpeg" alt="Puting Beliung">
+                </div>
+                <div class="card">
+                    <img src="Foto/tsunami.jpeg" alt="Tsunami">
+                </div>
+            </div>
+        </div>
+
+        <!-- Paragraf Penjelas -->
+        <p class="description">
+            Indonesia berada di jalur Cincin Api Pasifik (Ring of Fire), yang membuatnya rawan terhadap berbagai jenis bencana alam. Portal ini hadir sebagai panduan kesiapsiagaan untuk membantu Anda dan keluarga tetap aman sebelum, saat, dan setelah bencana terjadi.
+        </p>
+    </main>
+
+</body>
 </html>
