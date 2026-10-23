@@ -1,10 +1,14 @@
-/*RESPONSIF UNTUK TABLET & LAPTOP KECIL*/
+/* Media Query untuk Tablet (Max-width: 992px) */
 @media (max-width: 992px) {
-    /* Header & Navigasi */
+    html, body {
+        height: auto;
+        overflow-y: auto; /* Memungkinkan scroll vertikal pada layar kecil */
+    }
+
     .navbar {
         flex-direction: column;
-        gap: 15px;
-        padding: 0 20px 15px 20px;
+        gap: 12px;
+        padding: 0 20px 10px 20px;
     }
 
     nav ul {
@@ -13,60 +17,51 @@
         gap: 10px 15px;
     }
 
-    /* Judul Utama */
     .main-title {
-        font-size: 28px;
-        margin-bottom: 30px;
+        font-size: 24px;
     }
 
-    /* Layout Galeri Gambar */
-    .row {
-        flex-wrap: wrap;
-        gap: 20px;
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Reset span khusus desktop pada layar tablet */
+    .grid-container > .card:nth-child(5),
+    .grid-container > .card:nth-child(6),
+    .grid-container > .card:nth-child(7) {
+        grid-column: auto;
+        margin: 0;
     }
 
     .card {
-        width: 45%; /* Di tablet, gambar tampil 2 kolom per baris */
-        height: 150px;
-    }
-
-    /* Deskripsi */
-    .description {
-        font-size: 16px;
-        padding: 0 10px;
+        height: 140px;
     }
 }
 
-/*RESPONSIF UNTUK HP / SMARPHONE*/
+/* Media Query untuk Smartphone (Max-width: 576px) */
 @media (max-width: 576px) {
-    /* Header */
-    header {
-        padding-top: 15px;
-    }
-
     .logo {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     nav ul li a {
         font-size: 10px;
     }
 
-    /* Judul Utama */
     .main-title {
-        font-size: 20px;
-        letter-spacing: 0;
+        font-size: 18px;
     }
 
-    /* Layout Gambar Di HP */
+    .hero-intro {
+        font-size: 12px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 kolom penuh di HP */
+    }
+
     .card {
-        width: 100%; /* Di HP, gambar tampil penuh 1 kolom per baris */
-        height: 180px;
-    }
-
-    /* Deskripsi */
-    .description {
-        font-size: 14px;
-        line-height: 1.5;
+        height: 160px;
     }
 }
